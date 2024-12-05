@@ -1,0 +1,135 @@
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+    
+body{
+  background-color: #efebe7!important;
+  font-family: 'Corbel' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  margin: -12px;
+  margin-right: -12px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; 
+ 
+}
+    
+  
+ul li {
+  text-align:center!important;
+}
+  
+.drpdn-li {
+  margin: top 0.9em;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block!important;
+    animation: transitionIn 0.5s;
+    padding: 1;
+  }
+.drpdn-li .dropdown-menu{
+    display: none!important;
+  }
+
+.dropdown:hover .dropdown-toggle::after{
+    border-top: 0;
+    border-bottom: .3em solid;
+  }
+
+  
+.navbar-custom {
+  background-color:#efebe7!important;
+  font-size: large!important;   
+}
+  
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-links {
+  height:50px;
+  text-align: center;
+}
+  
+a:hover{
+  color: #8a6656df!important;
+  background-color: #efebe7!important ;
+}
+
+.container {
+  animation: transitionIn 0.75s;
+}
+ 
+@keyframes transitionIn {
+  from {
+      opacity: 0;
+      transform: rotatex(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #604133;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8a6656df;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0; 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #926652; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #664636; 
+}
+
+main {
+  flex: 1;
+}
+
+#footer {
+  background-color: #604133;
+  color: white;
+  text-align: center;
+  padding: 4em;
+  bottom: 0;
+  width: 100%;
+  position: bottom;
+}
